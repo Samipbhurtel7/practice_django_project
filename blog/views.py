@@ -52,6 +52,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         post = self.get_object()
         if self.request.user == post.author:
             return True
+            
         return False
 
     
@@ -60,6 +61,7 @@ def about(request):
 
 def contact(request):
      return render(request, 'blog/contact.html', {'title': 'contact'} )
+     
     
 
 
