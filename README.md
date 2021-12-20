@@ -1,3 +1,1 @@
-# practice_django_project
-
-#first time doing this
+Next step will be to look for the class based view 
